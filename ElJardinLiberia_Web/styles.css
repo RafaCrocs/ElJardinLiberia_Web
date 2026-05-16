@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka";
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #31812e;
+    margin-bottom: 80px;
+}
+
+.nav{
+    background-color: #31812e;
+    color: white;
+    padding: 10px;
+}
+
+.logo{
+    margin: 0 20px;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.nav_item{
+    margin: 0 16px;
+}
+.nav_link{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 3px double transparent;
+    transition: border-color 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+}
+.nav_link:hover{
+    text-decoration: none;
+    background-color: #f4f4f4;
+    color: #31812e;
+    box-shadow: inset 0 -2px 0;
+    border-color: #31812e;
+}
+
+.contactanos{
+    display: flex;
+    align-items: center;
+    background-color: #31812e;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.contactanos-text{
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.infoSouvenir{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.infoSouvenir h1{
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding: 0 40px;
+}
+
+.infoSouvenir p{
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 800px;
+    text-align: center;
+}
+.trenImagenes{
+    overflow: hidden;
+    width: min(1280px, 100%);
+    margin: 30px;
+    padding: 20px;
+    border-top: #31812e 4px solid;
+    border-bottom: #31812e 4px solid;
+    border-radius: 10px;
+    box-shadow: #333 8px 10px 15px;
+}
+.trenTrack{
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: trenScroll 40s linear infinite;
+}
+.trenImagenes img{
+    width: min(400px, 75vw);
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+@keyframes trenScroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-50% - 10px));
+    }
+}
+
+#souvenirs{ 
+    margin-top: 100px;
+}
+
+.ContenidoSouvenirs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SouvenirTexto
+{
+    flex: 1;
+    padding: 20px;
+    max-width: 40%;
+}
+
+.SouvenirTexto h1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;   
+}
+.SouvenirTexto p{
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.SouvenirImagen img{
+    border-radius: 20px;
+}  
+
+#restaurante{
+    margin-top: 100px;
+}
+.ContenidoRestaurante{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.RestauranteTexto{
+    flex: 1;
+    padding: 20px;
+    max-width: 40%;
+    margin-left: 30px;
+}
+.RestauranteTexto h1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;   
+}
+.RestauranteTexto p{
+    margin-top: 50px;
+    font-size: 18px;
+}
+.RestauranteImagen img{
+    border-radius: 20px;
+}
+
+#coffeeRoaster{
+    margin-top: 100px;
+}
+.ContenidoCoffeeRoaster{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.CoffeeRoasterTexto{
+    padding: 20px;
+    max-width: 1000px;
+    text-align: center;
+}
+.CoffeeRoasterTexto h1{
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.CoffeeRoasterTexto p{
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.fondoCoffeeRoaster{
+    width: 100%;
+    background-color: #31812e;
+    padding: 40px 20px;
+}
+
+#contacto{
+    margin-top: 100px;
+}
+.infoContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.infoContacto h2{
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding: 0 40px;
+}
+.infoContacto p{
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #31812e;
+    color: white;
+    margin-top: 40px;
+}
